@@ -1,11 +1,11 @@
 import "./Header.scss";
-
+import Logo from "../../assets/imgs/Logo Passoia.png"
 
 function Header(){
     return(
         <>
         <div className="container">
-        <img src="./src\assets\imgs\Logo Passoia.png" alt="imagem do logo passoia" />
+        <img src={Logo} alt="imagem do logo passoia" />
         <nav className="navbar">
             <ul>
                 <li><a href="#">LOOKS</a></li>
