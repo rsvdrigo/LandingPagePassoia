@@ -5,37 +5,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     font-weight: 500;
     padding: 7px 10px;
     margin-bottom: 20px;
     margin: 10px 30px;
+
 }
 
-.container img{
+.container img {
     display: flex;
     align-items: center;
     width: 226px;
     height: 75px;
 }
 
-.container nav{
+.container nav {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;  
-    
 }
-.container nav ul{
+
+.container nav ul {
     display: flex;
     margin-bottom: 15px;
     list-style: none;
     gap: 30px;
     text-decoration: none;
+
+}
+
+.container nav ul li a {
+    text-decoration: none;
     color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
 }
