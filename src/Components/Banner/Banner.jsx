@@ -4,7 +4,7 @@ function Banner(){
   return (
     <>
     <div className="banner-container">
-      <img src="./src\assets\Banner.png" alt="Uma mulher com uma linha de cosmético" />
+      <img src="./src\assets\imgs\Banner.png" alt="Uma mulher com uma linha de cosmético" />
     </div>
     </>
   )

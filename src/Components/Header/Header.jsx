@@ -5,7 +5,7 @@ function Header(){
     return(
         <>
         <div className="container">
-        <img src="./src\assets\Logo Passoia.png" alt="imagem do logo passoia" />
+        <img src="./src\assets\imgs\Logo Passoia.png" alt="imagem do logo passoia" />
         <nav className="navbar">
             <ul>
                 <li><a href="#">LOOKS</a></li>
