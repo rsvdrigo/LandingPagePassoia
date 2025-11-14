@@ -1,4 +1,3 @@
-
 import "./News4u.scss"
 import BannerNews from "../../assets/imgs/makeBanner.png"
 
