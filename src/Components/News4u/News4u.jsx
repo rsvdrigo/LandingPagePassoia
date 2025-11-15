@@ -5,7 +5,7 @@ function News4u() {
     return (
         <>
             <section className="News4u-container">
-                <h2>NOVIDADADES PARA VOCÊ</h2>
+                <h2>NOVIDADES PARA VOCÊ</h2>
                 <img src={BannerNews} alt="imagem de maquiagens espalhadas" />
             </section>
         </>

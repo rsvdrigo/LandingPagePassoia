@@ -11,6 +11,7 @@
 .Looks-Container img {
     width: 400px;
     max-width: 100%;
+    height: auto;
 }
 
 .Looks-Container h2 {
@@ -24,20 +25,101 @@
 .cards-container {
     display: flex;
     gap: 25px;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .Looks-Container {
+        margin-top: 6vh;
+        padding: 0 40px;
+    }
+
+    .Looks-Container h2 {
+        font-size: 36px;
+        margin-bottom: 5vh;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+        max-width: 1200px;
+        flex-wrap: nowrap; 
+    }
+
+    .cards-container img {
+        width: 250px;
+        height: auto;
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .Looks-Container {
+        margin-top: 6vh;
+        padding: 0 30px;
+    }
+
+    .Looks-Container h2 {
+        font-size: 32px;
+        margin-bottom: 5vh;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+        max-width: 900px;
+        flex-wrap: nowrap; 
+    }
+
+    .cards-container img {
+        width: 200px;
+        height: auto;
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .Looks-Container {
+        margin-top: 5vh;
+        padding: 0 25px;
+    }
+
+    .Looks-Container h2 {
+        font-size: 28px;
+        margin-bottom: 4vh;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        width: 100%;
+        max-width: 700px;
+        flex-wrap: nowrap; 
+    }
+
+    .cards-container img {
+        width: 150px;
+        height: auto;
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
     .Looks-Container {
         margin-top: 5vh;
         padding: 0 20px;
     }
 
     .Looks-Container h2 {
-        font-size: 28px;
+        font-size: 24px;
         margin-bottom: 4vh;
-        line-height: 1.2;
     }
 
     .cards-container {
@@ -45,7 +127,7 @@
         grid-template-columns: 1fr 1fr; 
         gap: 15px;
         width: 100%;
-        max-width: 400px;
+        max-width: 500px;
     }
 
     .cards-container img {
@@ -56,13 +138,26 @@
 
 
 @media (max-width: 480px) {
+    .Looks-Container {
+        margin-top: 4vh;
+        padding: 0 15px;
+    }
+
     .Looks-Container h2 {
-        font-size: 24px;
+        font-size: 20px;
         margin-bottom: 3vh;
     }
 
     .cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
         gap: 12px;
-        max-width: 350px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .cards-container img {
+        width: 100%;
+        height: auto;
     }
 }
