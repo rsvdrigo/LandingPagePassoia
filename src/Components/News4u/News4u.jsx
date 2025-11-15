@@ -4,9 +4,9 @@ import BannerNews from "../../assets/imgs/makeBanner.png"
 function News4u() {
     return (
         <>
-            <section>
+            <section className="News4u-container">
                 <h2>NOVIDADADES PARA VOCÊ</h2>
-                <img src={BannerNews} alt="" />
+                <img src={BannerNews} alt="imagem de maquiagens espalhadas" />
             </section>
         </>
     )
