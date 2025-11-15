@@ -1,28 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 .Looks-Container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-top: 7vh;
     align-items: center;
-
-
 }
 
-.Looks-Container img{
+.Looks-Container img {
     width: 400px;
     max-width: 100%;
 }
 
-.Looks-Container  h2 {
+.Looks-Container h2 {
     font-family: "Roboto", sans-serif;
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 6vh;
+    text-align: center;
 }
-.cards-container{
+
+.cards-container {
     display: flex;
     gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .Looks-Container {
+        margin-top: 5vh;
+        padding: 0 20px;
+    }
+
+    .Looks-Container h2 {
+        font-size: 28px;
+        margin-bottom: 4vh;
+        line-height: 1.2;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 15px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .cards-container img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .Looks-Container h2 {
+        font-size: 24px;
+        margin-bottom: 3vh;
+    }
+
+    .cards-container {
+        gap: 12px;
+        max-width: 350px;
+    }
 }
