@@ -7,7 +7,7 @@ function Release () {
 const [LipsColor, setLipsColor] = useState(RedLips);
   return (
     <>
-    <section>
+    <section className="release-section">
         <h2>APROVEITE OS LANÇAMENTOS</h2>
         <div className="release-container">
             <div className="release-imgs">

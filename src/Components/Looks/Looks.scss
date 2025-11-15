@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-section {
+.Looks-Container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-top: 7vh;
     align-items: center;
 
+
 }
 
-section h2 {
+.Looks-Container img{
+    width: 400px;
+    max-width: 100%;
+}
+
+.Looks-Container  h2 {
     font-family: "Roboto", sans-serif;
     font-size: 40px;
     font-weight: 700;

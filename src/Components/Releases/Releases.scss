@@ -1,9 +1,24 @@
 
+.release-section{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 4vh;
+    }
+
+}
 .release-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 4vh;
     
 }
 
