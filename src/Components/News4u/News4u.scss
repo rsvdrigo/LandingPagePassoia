@@ -6,22 +6,20 @@
     flex-direction: column;
     align-items: center;
     margin-top: 10vh;
+    margin-bottom: 67px;
 }
 
 .News4u-container h2 {
     font-family: "Roboto", sans-serif;
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 6vh;
+    margin-bottom: 5vh;
 }
 
-.News4u-container{
-    margin-bottom: 67px;
-    
-}
 .News4u-container img{
-    width: 1700px;
+    width: 1500px;
     max-width: 100%;
+    height: 650px;
 }
 
 @media (max-width: 768px) {
