@@ -57,8 +57,6 @@
         width: 70px;
         height: 70px;
         object-fit: contain;
-        
-        
     }
 }
 
@@ -66,96 +64,116 @@
     display: flex;
     gap: 15px;
     
-    .social-icon {
+    img {
         width: 40px;
         height: 40px;
-        background-color: #ddd;
-        border-radius: 50%;
-        transition: background-color 0.3s;
-        
-        &:hover {
-            background-color: #ccc;
-        }
+        object-fit: contain;
     }
 }
 
-// Media Query para Mobile
 @media (max-width: 768px) {
     .Footer-container {
         padding: 30px 15px;
-        margin-top: 60px;
+        margin-top: 40px;
     }
     
     .footer-content {
-        flex-direction: column;
-        gap: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        gap: 20px 30px; 
+        text-align: left;
     }
+    
+    
+    .footer-section:nth-child(1) { 
+        grid-column: 1 / 2; 
+        grid-row: 1 / 3;    
+    }
+    
+    .footer-section:nth-child(2) { 
+        grid-column: 2 / 3; 
+        grid-row: 1 / 2;    
+    }
+    
+    .footer-section:nth-child(3) { 
+        grid-column: 1 / 3; 
+        grid-row: 2 / 3;    
+    }
+    
     
     .footer-section {
-        text-align: center;
-        
         h3 {
-            font-size: 20px;
-            margin-bottom: 15px;
+            font-size: 16px; 
+            margin-bottom: 5px;
         }
         
-        ul li a {
-            font-size: 16px;
+        ul {
+            li {
+                margin-bottom: 3px;
+                a {
+                    font-size: 14px; 
+                    font-weight: 400;
+                }
+            }
         }
     }
+    
     
     .payment-methods {
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
-        max-width: 180px;
-        margin: 0 auto;
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 8px;
+        max-width: 180px; 
         
         img {
-            width: 70px;
-            height: 45px;
+            width: 50px; 
+            height: auto;
         }
     }
-    
+
+
     .social-icons {
-        justify-content: center;
+        gap: 12px;
         
-        .social-icon {
-            width: 35px;
-            height: 35px;
+        img {
+            width: 32px;
+            height: 32px;
         }
     }
 }
 
-// Para telas muito pequenas
+
 @media (max-width: 480px) {
     .Footer-container {
         padding: 20px 10px;
-        margin-top: 40px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px 15px; 
     }
     
     .footer-section {
         h3 {
-            font-size: 18px;
-        }
-        
-        ul li a {
             font-size: 14px;
+        }
+        ul li a {
+            font-size: 12px;
         }
     }
     
     .payment-methods {
-        max-width: 160px;
-        
+        max-width: 160px; 
         img {
-            width: 60px;
-            height: 40px;
+            width: 45px;
         }
     }
     
     .social-icons {
-        .social-icon {
-            width: 30px;
-            height: 30px;
+        gap: 10px;
+        img {
+            width: 28px;
+            height: 28px;
         }
     }
 }
