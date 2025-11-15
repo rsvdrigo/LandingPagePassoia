@@ -14,6 +14,14 @@ import BlueCircle from "./BlueCircle.png"
 import BaseCircle from "./BaseCircle.png"
 import BrownCircle from "./BrownCircle.png"
 import Stars from "./stars.png"
+import Boleto from "./boleto.png"
+import Visa from "./visa.png"
+import Mastercard from "./mastercard.png"
+import Pix from "./pix.png"
+import Instagram from "./instagram.png"
+import Facebook from "./facebook.png"
+import Youtube from "./youtube.png"
+import Twitter from "./twitter.png"
 
 export {
     Lips,
@@ -31,5 +39,13 @@ export {
     BlueCircle,
     BaseCircle,
     BrownCircle,
-    Stars
+    Stars,
+    Boleto,
+    Visa,
+    Mastercard,
+    Pix,
+    Instagram,
+    Facebook,
+    Youtube,
+    Twitter
 };
