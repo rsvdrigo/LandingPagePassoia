@@ -14,7 +14,6 @@ function App(){
   <Release/>
   <News4u/>
   <Footer/>
-  
   </>
   )
 }

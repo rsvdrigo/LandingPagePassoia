@@ -17,8 +17,6 @@ function Header(){
         <>
             <div className="container">
                 <img src={Logo} alt="imagem do logo passoia" />
-                
-                {/* Menu Desktop */}
                 <nav className="navbar">
                     <ul>
                         <li><a href="#">LOOKS</a></li>
@@ -26,8 +24,6 @@ function Header(){
                         <li><a href="#">NOVIDADE</a></li>
                     </ul>
                 </nav>
-
-                {/* Menu Hamburger */}
                 <div 
                     className={`hamburger ${isMenuOpen ? 'active' : ''}`} 
                     onClick={toggleMenu}
@@ -37,8 +33,6 @@ function Header(){
                     <span></span>
                 </div>
             </div>
-
-            {/* Menu Mobile */}
             <div className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}>
                 <button className="close-menu" onClick={closeMenu}>×</button>
                 <ul>
