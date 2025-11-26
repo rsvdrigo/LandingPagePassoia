@@ -25,7 +25,7 @@ const [LipsColor, setLipsColor] = useState(RedLips);
                 <p>Cores disponível</p>
                 <div className="release-info-pallet">
                     <img 
-                        onClick={()=>setLipsColor(BlueLips)} 
+                        onClick={()=>setLipsColor(BlueLips)}
                         onMouseOver={()=>setLipsColor(BlueLips)} 
                         src={BlueCircle} 
                         alt="circulo azul" 
